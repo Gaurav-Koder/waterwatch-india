@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WaterWatch India — Monitoring Water Pollution in India using Digital Technology">
+  <title>WaterWatch India | Digital Water Pollution Monitoring</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="nav">
+    <a class="brand" href="#top"><span class="brand-mark">◉</span> WATERWATCH <b>INDIA</b></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <nav id="navLinks">
+      <a href="#problem">Problem</a>
+      <a href="#video">Film</a><a href="#technology">Technology</a>
+      <a href="#parameters">Indicators</a>
+      <a href="#evidence">Evidence</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#team">Team</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content reveal">
+        <div class="eyebrow"><span></span> EVS • DIGITAL ENVIRONMENTAL MONITORING</div>
+        <h1>Can technology help us <em>see</em> water pollution?</h1>
+        <p class="hero-copy">A digital approach to understanding water quality in India — combining sensors, data, mapping and analysis to turn scattered measurements into actionable information.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#evidence">Explore the evidence ↗</a>
+          <a class="btn ghost" href="#technology">How it works ↓</a>
+        </div>
+        <div class="hero-tags"><span>Project Video</span><span>IoT Sensors</span><span>GIS Mapping</span><span>Cloud Data</span><span>AI & Analytics</span></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="orb"><div class="orb-inner">H₂O</div></div>
+        <div class="float-card card-a"><small>LIVE SIGNAL</small><strong>pH 7.2</strong><span>within normal range</span></div>
+        <div class="float-card card-b"><small>MONITORING</small><strong>24 / 7</strong><span>continuous sensing</span></div>
+        <div class="float-card card-c"><small>DATA → ACTION</small><strong>01</strong><span>detect • analyse • respond</span></div>
+      </div>
+    </section>
+
+    <section class="ticker">
+      <div>WATER QUALITY</div><div>•</div><div>DIGITAL SENSING</div><div>•</div><div>GIS + REMOTE SENSING</div><div>•</div><div>OPEN DATA</div><div>•</div><div>EARLY WARNING</div>
+    </section>
+
+    <section class="section" id="problem">
+      <div class="section-label">01 — THE PROBLEM</div>
+      <div class="section-head">
+        <h2>Pollution is invisible<br><span>until the data tells us.</span></h2>
+        <p>Water can look clean and still contain changes in dissolved oxygen, organic load, salts, metals or microbial contamination. Monitoring turns those hidden changes into measurable signals.</p>
+      </div>
+      <div class="problem-grid">
+        <article class="feature-card dark">
+          <div class="icon">⌁</div>
+          <h3>Industrial discharge</h3>
+          <p>Untreated or inadequately treated effluent can introduce chemicals, metals and organic pollutants into water bodies.</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon">⌁</div>
+          <h3>Urban wastewater</h3>
+          <p>Sewage, stormwater and solid waste can change oxygen demand and microbial quality in rivers and lakes.</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon">⌁</div>
+          <h3>Agricultural runoff</h3>
+          <p>Fertilisers, pesticides and soil can enter surface water through runoff, especially during rainfall events.</p>
+        </article>
+        <article class="feature-card accent">
+          <div class="icon">⌁</div>
+          <h3>Why digital?</h3>
+          <p>Digital systems can collect measurements faster, attach location and time, visualise patterns and support earlier responses.</p>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="section video-section" id="video">
+      <div class="section-label">02 — WATCH THE STORY</div>
+      <div class="video-intro">
+        <div>
+          <h2>From polluted water<br><span>to a digital response.</span></h2>
+        </div>
+        <div>
+          <p>This project video connects the visible problem of water pollution with the role of digital monitoring. Watch the full sequence before exploring the technologies and data systems behind the idea.</p>
+          <div class="video-meta"><span>PROJECT FILM</span><span>4 MIN 24 SEC</span><span>VISUAL STORY</span></div>
+        </div>
+      </div>
+      <div class="video-shell">
+        <div class="video-frame">
+          <video id="projectVideo" controls preload="metadata" playsinline poster="./assets/video-poster.jpg">
+            <source src="./water-monitoring-project.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+          <div class="video-corner top-left">WATERWATCH / FILM 01</div>
+          <div class="video-corner bottom-right">MONITOR • MAP • RESPOND</div>
+        </div>
+        <div class="video-caption">
+          <span><b>Why this belongs here</b> — The video acts as the bridge between the environmental problem and the digital-monitoring approach explored in the rest of the website.</span>
+          <a href="#technology">Continue to technology →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="technology">
+      <div class="section-label">03 — THE DIGITAL TOOLKIT</div>
+      <div class="section-head">
+        <h2>From a water sample<br><span>to a digital signal.</span></h2>
+        <p>No single technology solves water pollution. The strength comes from connecting different kinds of observations.</p>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-card"><div class="tech-no">01</div><div class="tech-icon">◌</div><h3>IoT sensors</h3><p>Field sensors can measure selected parameters continuously and transmit readings to a digital platform.</p><span class="tech-tag">REAL-TIME</span></div>
+        <div class="tech-card"><div class="tech-no">02</div><div class="tech-icon">⌖</div><h3>GIS mapping</h3><p>Location-based data helps compare monitoring stations, pollution hotspots and nearby land-use patterns.</p><span class="tech-tag">SPATIAL</span></div>
+        <div class="tech-card"><div class="tech-no">03</div><div class="tech-icon">◫</div><h3>Remote sensing</h3><p>Satellite observations can support broad-area monitoring of water bodies and surrounding environmental change.</p><span class="tech-tag">LARGE AREA</span></div>
+        <div class="tech-card"><div class="tech-no">04</div><div class="tech-icon">⌁</div><h3>AI & analytics</h3><p>Models can identify patterns, compare trends and potentially flag unusual measurements for investigation.</p><span class="tech-tag">PATTERN FINDING</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="parameters">
+      <div class="section-label">04 — WHAT DO WE MEASURE?</div>
+      <div class="section-head">
+        <h2>A water body has<br><span>many digital fingerprints.</span></h2>
+        <p>The CPCB datasets on the National Water Data Portal include physical, chemical and biological water-quality parameters. These measurements can be connected with station IDs, dates and geographic information.</p>
+      </div>
+      <div class="parameter-layout">
+        <div class="parameter-list">
+          <button class="param active" data-param="ph"><b>pH</b><span>Acidity / alkalinity</span><i>→</i></button>
+          <button class="param" data-param="do"><b>Dissolved Oxygen</b><span>Oxygen available in water</span><i>→</i></button>
+          <button class="param" data-param="bod"><b>BOD</b><span>Biochemical oxygen demand</span><i>→</i></button>
+          <button class="param" data-param="turbidity"><b>Turbidity</b><span>Water clarity / suspended matter</span><i>→</i></button>
+          <button class="param" data-param="tds"><b>TDS</b><span>Total dissolved solids</span><i>→</i></button>
+          <button class="param" data-param="coliform"><b>Coliforms</b><span>Microbial contamination indicator</span><i>→</i></button>
+        </div>
+        <div class="parameter-display">
+          <div class="param-orb" id="paramOrb"><span id="paramValue">7.2</span><small id="paramUnit">pH</small></div>
+          <div><span class="mini-label">WHY IT MATTERS</span><h3 id="paramTitle">pH</h3><p id="paramDesc">pH indicates how acidic or alkaline the water is. It is one part of a wider water-quality assessment and should be interpreted with other measurements.</p></div>
+          <div class="scale"><span>LOW</span><div><i id="scaleFill"></i></div><span>HIGH</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section evidence" id="evidence">
+      <div class="section-label">05 — OFFICIAL EVIDENCE</div>
+      <div class="section-head">
+        <h2>What did <span>CPCB actually observe?</span></h2>
+        <p>Instead of creating illustrative graphs, this section uses figures based directly on the Central Pollution Control Board's published Yamuna report. The comparison is historical: March 2020 (pre-lockdown) versus April 2020 (lockdown).</p>
+      </div>
+
+      <div class="official-banner">
+        <div><span class="mini-label">GOVERNMENT SOURCE</span><h3>Water Quality of River Yamuna — Delhi Stretch</h3><p>Official CPCB assessment published in 2020. The figures below reproduce the report's reported values for its Figures 2–4; they are not current 2026 readings.</p></div>
+        <a class="source-btn" href="https://cpcb.nic.in/openpdffile.php?id=TGF0ZXN0RmlsZS8yOTJfMTU4NzczNDE2N19tZWRpYXBob3RvNzEzMC5wZGY%3D" target="_blank" rel="noopener">Open CPCB report ↗</a>
+      </div>
+
+      <div class="official-charts">
+        <figure class="chart-card"><img src="assets/cpcb_yamuna_ph.png" alt="CPCB Figure 2 recreated: pH in Yamuna and two drains, March and April 2020"><figcaption><b>CPCB Figure 2 — pH</b><span>Recreated from the official figure using the reported values. Primary bathing criterion in the report: pH 6.5–8.5.</span></figcaption></figure>
+        <figure class="chart-card"><img src="assets/cpcb_yamuna_do.png" alt="CPCB Figure 3 recreated: dissolved oxygen in Yamuna, March and April 2020"><figcaption><b>CPCB Figure 3 — Dissolved Oxygen</b><span>Recreated from the official figure/table. The report uses a 5 mg/L primary criterion for outdoor bathing.</span></figcaption></figure>
+        <figure class="chart-card wide"><img src="assets/cpcb_yamuna_bod.png" alt="CPCB Figure 4 recreated: BOD in Yamuna and two drains, March and April 2020"><figcaption><b>CPCB Figure 4 — BOD</b><span>Recreated from the official figure/table. The report uses a 3 mg/L primary criterion for outdoor bathing.</span></figcaption></figure>
+      </div>
+
+      <div class="data-table-wrap">
+        <div class="table-head"><div><span class="mini-label">SOURCE VALUES</span><h3>Selected CPCB observations</h3></div><span class="table-note">March 04 → April 06, 2020</span></div>
+        <div class="table-scroll"><table><thead><tr><th>Location</th><th>pH · Mar</th><th>pH · Apr</th><th>DO · Mar</th><th>DO · Apr</th><th>BOD · Mar</th><th>BOD · Apr</th></tr></thead><tbody>
+          <tr><td>Palla</td><td>8.7</td><td>7.8</td><td>17.1</td><td>8.3</td><td>7.9</td><td>2.0</td></tr>
+          <tr><td>Nizamuddin</td><td>7.3</td><td>7.2</td><td>BDL</td><td>2.4</td><td>57</td><td>5.6</td></tr>
+          <tr><td>Okhla U/S</td><td>7.2</td><td>7.1</td><td>BDL</td><td>1.2</td><td>27</td><td>6.1</td></tr>
+          <tr><td>Najafgarh Drain</td><td>7.3</td><td>7.3</td><td>—</td><td>—</td><td>78</td><td>55</td></tr>
+          <tr><td>Shahdara Drain</td><td>7.1</td><td>7.2</td><td>—</td><td>—</td><td>163</td><td>89</td></tr>
+        </tbody></table></div>
+        <p class="table-source">Source: CPCB, <i>Report on Assessment of Impact of Lock Down on Water Quality of River Yamuna – Delhi Stretch</i>, Figures 2–4 and Tables 1–2. “BDL” = below detection limit. Values are historical and shown for academic analysis.</p>
+      </div>
+    </section>
+
+    <section class="section interpretation" id="interpretation">
+      <div class="section-label">06 — READING THE EVIDENCE</div>
+      <div class="section-head"><h2>The signal is not<br><span>the same at every station.</span></h2><p>The official report gives a useful lesson for digital monitoring: location matters. Along the Delhi stretch, the measurements change substantially between stations, so a single city-wide number would hide the spatial story.</p></div>
+      <div class="insight-grid">
+        <article><span>01</span><h3>pH alone is not enough</h3><p>The reported pH values mostly sit in a comparatively narrow range, while DO and BOD show much larger differences. Water quality needs multiple indicators.</p></article>
+        <article><span>02</span><h3>DO and BOD tell different parts of the story</h3><p>The CPCB report shows very low dissolved oxygen at downstream Delhi stations alongside much higher BOD values. Together these indicators are more informative than either alone.</p></article>
+        <article><span>03</span><h3>Location changes the interpretation</h3><p>Comparing Palla, Nizamuddin, Okhla and major drains shows why GIS-linked monitoring can help identify where conditions change and where investigation should focus.</p></article>
+      </div>
+    </section>
+
+    <section class="section alt" id="workflow">
+      <div class="section-label">07 — THE MONITORING PIPELINE</div>
+      <div class="section-head">
+        <h2>Measure → store → map<br><span>→ understand → respond.</span></h2>
+        <p>Digital monitoring does not replace field sampling or laboratory analysis. It helps organise observations, attach time and place, visualise patterns and support faster interpretation.</p>
+      </div>
+      <div class="pipeline">
+        <div class="step"><span>01</span><div class="step-icon">◉</div><h3>Measure</h3><p>Collect observations using field instruments, sensors or laboratory testing.</p></div>
+        <div class="connector">→</div>
+        <div class="step"><span>02</span><div class="step-icon">↗</div><h3>Record</h3><p>Store each result with a date, station identifier and geographic context.</p></div>
+        <div class="connector">→</div>
+        <div class="step"><span>03</span><div class="step-icon">⌖</div><h3>Map</h3><p>Use GIS to connect water-quality measurements with their physical locations.</p></div>
+        <div class="connector">→</div>
+        <div class="step"><span>04</span><div class="step-icon">⌁</div><h3>Analyse</h3><p>Compare stations, time periods and selected indicators to reveal patterns.</p></div>
+        <div class="connector">→</div>
+        <div class="step"><span>05</span><div class="step-icon">!</div><h3>Respond</h3><p>Use unusual results as a reason for verification, investigation and environmental action.</p></div>
+      </div>
+    </section>
+
+    <section class="section case-study" id="case">
+      <div class="section-label">08 — CASE STUDY</div>
+      <div class="case-grid">
+        <div>
+          <span class="case-kicker">A POSSIBLE STUDY DESIGN</span>
+          <h2>Follow the Yamuna.<br><em>Compare its story.</em></h2>
+          <p>For this project, the Delhi stretch of the Yamuna is used as the case study. CPCB monitoring identifies stations such as Palla, Nizamuddin and Okhla, together with major drains that contribute wastewater. The official 2020 report gives us a compact example of how station-based measurements can reveal spatial differences.</p>
+          <div class="case-points">
+            <div><b>01</b><span>Delhi stretch of Yamuna</span></div>
+            <div><b>02</b><span>5 sampling locations</span></div>
+            <div><b>03</b><span>March → April 2020</span></div>
+            <div><b>04</b><span>pH • DO • BOD</span></div>
+          </div>
+        </div>
+        <div class="river-card">
+          <div class="river-lines"></div>
+          <div class="station s1"><i></i><span>Station A</span></div>
+          <div class="station s2"><i></i><span>Station B</span></div>
+          <div class="station s3"><i></i><span>Station C</span></div>
+          <div class="river-label">CPCB<br>MONITORING<br>CORRIDOR</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="solutions">
+      <div class="section-label">09 — THE WAY FORWARD</div>
+      <div class="section-head">
+        <h2>Technology is not the solution.<br><span>Better decisions are.</span></h2>
+        <p>Digital monitoring becomes valuable when data is reliable, accessible and connected to environmental management.</p>
+      </div>
+      <div class="solutions-grid">
+        <article><span>01</span><h3>More continuous monitoring</h3><p>Use digital sensing where appropriate to complement periodic sampling and laboratory analysis.</p></article>
+        <article><span>02</span><h3>Open, understandable data</h3><p>Make environmental information easier for students, citizens, researchers and planners to interpret.</p></article>
+        <article><span>03</span><h3>Smarter hotspot detection</h3><p>Combine station data, GIS and analytics to identify places that deserve closer investigation.</p></article>
+        <article><span>04</span><h3>Citizen participation</h3><p>Digital reporting tools can help communities document visible pollution and local environmental concerns.</p></article>
+      </div>
+      <div class="quote">“The goal of monitoring is not to collect more numbers. It is to make environmental change easier to notice — and harder to ignore.”</div>
+    </section>
+
+    <section class="section team" id="team">
+      <div class="section-label">10 — THE PROJECT</div>
+      <div class="team-card">
+        <div><span class="mini-label">ENVIRONMENTAL STUDIES • PROJECT</span><h2>Monitoring Water Pollution<br><span>in India using Digital Technology</span></h2><p>Academic awareness project. Replace the details below with your actual course, university, group members and roll numbers.</p></div>
+        <div class="members">
+          <div><b>01</b><span>Gaurav Kalra</span><small>Roll No: RK3P26VKA11</small></div>
+          <div><b>02</b><span>Saloni Sharma</span><small>Roll No: RK3P26VKA12</small></div>
+          <div><b>03</b><span>Misha Jain</span><small>Roll No: RK3P26VKA13</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sources">
+      <div class="section-label">11 — SOURCES</div>
+      <h2>Build the project on<br><span>real environmental data.</span></h2>
+      <div class="source-list">
+        <a href="https://cpcb.nic.in/openpdffile.php?id=TGF0ZXN0RmlsZS8yOTJfMTU4NzczNDE2N19tZWRpYXBob3RvNzEzMC5wZGY%3D" target="_blank" rel="noopener"><span>01</span><b>CPCB Yamuna report</b><small>Water Quality of River Yamuna — Delhi Stretch; Figures 2–4 used in this project</small>↗</a>
+        <a href="https://nwdp.nwic.gov.in/en/dataset/surface-water-quality-manual-biological-parameters-cpcb" target="_blank" rel="noopener"><span>02</span><b>National Water Data Portal</b><small>CPCB biological surface-water datasets, including BOD, COD and coliform indicators</small>↗</a>
+        <a href="https://nwdp.nwic.gov.in/en/dataset/surface-water-quality-manual-chemical-parameters-cpcb" target="_blank" rel="noopener"><span>03</span><b>National Water Data Portal</b><small>CPCB chemical surface-water datasets, including pH, DO, TDS and other parameters</small>↗</a>
+        <a href="https://nwdp.nwic.gov.in/en/dataset/surface-water-quality-manual-physical-parameters-cpcb" target="_blank" rel="noopener"><span>04</span><b>National Water Data Portal</b><small>CPCB physical surface-water datasets</small>↗</a>
+      </div>
+      <p class="source-note">The dashboard visuals in this version have been replaced with official CPCB evidence. The National Water Data Portal remains the project's recommended starting point for newer downloadable CPCB observations; its Delhi biological resource was last updated January 24, 2026 and is offered as an open CSV resource.</p>
+    </section>
+  </main>
+
+  <footer><span>◉ WATERWATCH INDIA</span><span>Lovely Professional University • ENVIRONMENTAL STUDIES</span><a href="#top">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
